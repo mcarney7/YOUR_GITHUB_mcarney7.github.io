@@ -1,0 +1,27 @@
+/* styles.css */
+
+/* Zebra striping for tables */
+.zebra-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Background color for even rows */
+.zebra-table tr:nth-child(even) {
+  background-color: #00FFFF;
+}
+
+/* Background color for odd rows */
+.zebra-table tr:nth-child(odd) {
+  background-color: #00CED1; /* You can use any color you prefer */
+}
+
+.zebra-table th, .zebra-table td {
+  border: 1px solid #0000FF;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Add more table styling if needed */
+
