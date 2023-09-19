@@ -1,0 +1,26 @@
+body {
+  background-image: url('../images/your-background-image.jpg');
+  background-size: cover;
+  font-family: sans-serif; /* Change the font to sans-serif */
+}
+
+a:hover {
+  color: #FF5733; /* Change link color on hover */
+}
+
+/* Style the red and bold text using <span> */
+span.special-text {
+  color: red;
+  font-weight: bold;
+}
+
+/* Zebra-Striped Table Styling */
+.zebra-table {
+  border-collapse: collapse;
+}
+
+.zebra-table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Add more CSS rules as needed */
