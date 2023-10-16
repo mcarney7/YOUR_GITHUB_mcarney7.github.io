@@ -1,0 +1,248 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<link rel="stylesheet" type="text/css" href="./print.css" media="print" />
+
+
+		<title>Web Programming Homework 2 (DA Gucci Movie Review)by Sir Louis R. Henry</title>
+		
+		<style type="text/css">
+			#firebugscreenshots {
+				text-align: center;
+				white-space: nowrap;
+			}
+		</style>
+		
+		<style type="text/css" media="print">
+			#images img {
+				max-height: 150pt;
+			}
+			#firebugscreenshots img {
+				max-height: 170pt;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>
+			Web Programming  <br />
+			Homework Assignment 2: DA Gucci Movie Review<br />
+			Submit your link in a text file and upload to codd server<br />
+			Due Date: 10/09/2023
+		</h1>
+
+
+		<div id="expectedappearance">
+			<p>
+			<h1 align= "center">
+				For this assignment you will recreate the following page (between but not including the thick black lines):
+				</h1>
+			</p>
+
+			<hr class="outputseparator" />
+
+			<ul class="outputimagelist">
+				<li><img src="expected_output.png" alt="expected output" /></li>
+			</ul>
+
+			<hr class="outputseparator" />
+		</div>
+
+
+		<div id="description">
+			<p>
+				This assignment tests your understanding of XHTML and CSS for layout, positioning, and the CSS box model.  You will create files for a movie review web page.  Create the following files:
+			</p>
+
+			<ul>
+				<li><code>tmnt.html</code></li>
+				<li><code>movie.css</code>, the style sheet for <code>tmnt.html</code></li>
+			</ul>
+
+			<p>
+				I have provided you with a <strong>skeleton (image)version of <code>tmnt.html (see above image that shows  you the final appearance)</code></strong> that contains most of the basic page contents, but without any page sections or style sheet.  You will recreate page with modifications specified you need to make to this file divide the page into sections using <code>div</code> and <code>span</code> tags, and adding <code>id</code> and <code>class</code> attributes.  To earn full credit, you should not change the existing elements on the page other than the additions just described (and minor changes such as indentation and spacing).
+			</p>
+			
+			<p>
+				We will provide you with a <strong>skeleton of the files (images) see below <code>tmnt.html</code></strong> There is also a zip file that contains the the image contents. Remember you will create page sections ,style sheet and adding <code>id</code> and <code>class</code> attributes etc.  
+			</p>
+		</div>
+
+		
+		<div id="appearancedetails">
+			<h2>Appearance and Behavior Details:</h2>
+
+			<p>
+				All images on the page and mentioned in the following text are hosted on the web server in the designated folder.  You should link to all images using their full absolute URLs, not relative ones.
+			</p>
+			
+			<ul>
+				<li><code class="narrow">Be sure to place this asignment link  on your homepage which is [Assignment 1]</code></li>
+				<br/>
+				<li> Please go the Table of Contents for the image files used for the task <a href="./Table of Contents.html">Table of Contents </a>  </li>
+				<br/>
+				<li> You can also right click on the images below 1 at a time then save as</li>
+			</ul>
+			
+			<div id="images" style="width: 100%; border: 1px solid white; overflow: hidden;">
+				<div class="sample">
+					<img src="banner.png" alt="banner" /><br />
+					<span class="filename">banner.png</span>
+				</div>
+
+				<div class="sample" style="clear: both">
+					<img src="generaloverview.png" alt="general overview" /><br />
+					<span class="filename">generaloverview.png</span>
+				</div>
+
+				<div class="sample">
+					<img src="background.png" alt="background" /><br />
+					<span class="filename">background.png</span>
+				</div>
+
+				<div class="sample">
+					<img src="bannerbackground.png" alt="bannerbackground" /><br />
+					<span class="filename">bannerbackground.png</span>
+				</div>
+
+				<div class="sample">
+					<img src="rottenbig.png" alt="rottenbig" /><br />
+					<span class="filename">rottenbig.png</span>
+				</div>
+
+				<div class="sample">
+					<img src="rottenbackground.png" alt="rottenbackground" /><br />
+					<span class="filename">rottenbackground.png</span>
+				</div>
+
+				<div class="sample">
+					<img src="fresh.gif" alt="fresh" /><br />
+					<span class="filename">fresh.gif</span>
+				</div>
+
+				<div class="sample">
+					<img src="rotten.gif" alt="rotten" /><br />
+					<span class="filename">rotten.gif</span>
+				</div>
+
+				<div class="sample">
+					<img src="critic.gif" alt="critic" /><br />
+					<span class="filename">critic.gif</span>
+				</div>
+			
+				
+			</div>
+
+
+
+
+			<p>
+				The overall page has a background image of <code>background.png</code>.  Text on the page uses an 8pt font.  The preferred fonts for text are Verdana, Tahoma, or any sans-serif font available on the system.  The overall page body has no margin or padding, so its contents stretch to the very edge of the browser window.
+			</p>
+<br />
+			<p>
+				The top of the page contains an image banner.  The center of this banner is the image <code>banner.png</code>.  Behind this banner the image <code>bannerbackground.png</code> is repeated horizontally across the entire length of the page.  Each of these images is 50px tall.  (Hint: To make the banner stretch all the way to the edges of the page, use the <code>bannerbackground.png</code> as the background image of a block element that is behind the <code>banner.png</code>.)
+			</p>
+<br />
+				Underneath the image banner is a centered heading containing the movie name and year in a 24pt bold font.  The preferred fonts for this heading are Tahoma, Verdana, or any sans-serif font available on the system.
+			</p>
+
+			<p>
+				Below the main heading is the page's overall content area, containing an overall 32% rating for the film, several critics' reviews, and an overview of the film at right.  Taken together this content occupies 800px in width and is centered horizontally within the page.  If the page resizes horizontally, this 800px section should move itself dynamically so that it remains centered horizontally on the page.  This overall section has a 4px <ins class="correction">gray</ins> solid border and should be sized large enough to contain all of its contents.  (See textbook section 4.3.3 on making contents fit into a container.)
+			</p>
+<br />
+			<p>
+				Within the overall content area, there is a 550px-wide left-central section that contains the overall <q>rotten</q> rating of 32% and the critics' reviews of the movie.  The section is topped by a smaller section containing a large <q>rotten</q> image (<code>rottenbig.png</code>).  Behind this the image <code>rottenbackground.png</code> repeats horizontally across the entire length of the section.  Each of these images is 83px tall.  This is followed by the 32% overall rating for the film, which is shown in a 48pt red bold font, and a message that there are 88 reviews total, which is shown in the standard 8pt font in white.  (Hint: It can be tricky to get the large <q>rotten</q> image and the 32% rating text to line up vertically properly.  Try adjusting vertical alignment and/or making some content float.)
+			</p>
+<br />			
+				<p>
+				Below the 32% overall rating, there are two columns of reviews.  The columns each occupy 47% of the width of the overall left-center section of the page.  There is a horizontal spacing of 2% between the columns and neighboring content.  (See class notes or just goggle on creating multi-column layouts.)
+			</p>
+<br />
+			<p>
+				Each individual review consists of a box in which the reviewer gives a quote about the movie, in bold 8pt font.  The quote box has a background color of <code>#E1D697</code>.  The box has a gray border, 2px thick.  8px separate the quote box's content from its border.  Each quote box also contains an icon showing whether the reviewer liked (<code>fresh.gif</code>) or disliked (<code>rotten.gif</code>) the movie.  These images are on the left side of the quote box, with 5px separating them from the text to their right.  Text wraps around these images as needed.
+			</p>
+<br />			
+			<p>
+				The reviewer's personal information follows underneath the quote box, including the reviewer's name and publication in italic.  A reviewer icon (<code>critic.gif</code>) is also shown, to the left of the name/publication text, with 5px of horizontal space separating it from the text.  There is 3em of vertical space between reviews.  (Hint: Paragraphs that are part of movie reviews should be sized large enough to contain all of their content, including any floating content.  See textbook section 4.3.3 on making contents fit into a container.)
+			</p>
+<br />
+			<p>
+				To the right of the critics' reviews is a General Overview section of the page with a list of information about the movie.  This section is 250px wide, and there is 10px of space between the edge of the section and the text of the list.   The overview's content uses a background color of <code>#A2B964</code>.  Its text appears in an 8pt font of Arial or any sans-serif font available on the system.
+			</p>
+<br />
+			<p>
+				The section includes a <a href="https://www.w3.org/MarkUp/html3/deflists.html">definition list</a> (using <a href="http://www.maxdesign.com.au/presentation/definition/"><code>dl</code>, <code>dt</code>, and <code>dd</code> elements</a>) about the movie such as its stars and director.  Each term is bolded and has 1em of vertical separation between it and the element that precedes it.  The bottom of this section contains a link to the movie review web site, <code>https://savedelete.com/internet-tips/movie-review-websites/36302/</code>.
+			</p>
+<br />
+			<p>
+				Below the set of reviews is a bar with centered text explaining that the page shows reviews 1-8 of 88.  This bar has a background color of <code>#A2B964</code> and is placed directly up against its surrounding content.  5px separate the edge of its text and the element's own outer edge.
+			</p>
+<br />
+			<p>
+				The bottom right corner of the page has a section containing two links to the W3C validators.  These are the same images and links as used in the previous assignment, with no borders.  The W3C images are always present at the page's very bottom-right corner, both when the page first appears and after any scrolling.
+			</p>
+<br />
+			<p>
+				All other style elements on the page are subject to the preference of the web browser.  The screenshots in this document were taken on an older browser of Firefox, which may differ from your system. The web page's title text should be <strong>DGMR - DA Gucci Movie Review </strong> .  The page should have a "favorites icon" or "favicon" of <code><b> rotten.gif  </b></code> from the image directory shown previously.
+			</p>
+		</div>
+
+
+		<div id="implementation">
+			<h2>Implementation and Grading:</h2>
+			
+			<p>
+				We recommend that you install and use the <a href="http://getfirebug.com/">Firebug</a> add-on for Firefox or any other development tools when working on this assignment.  Using it to inspect elements will help you diagnose problems with the box model and get your styles just right.  We particularly suggest using the &quot;Layout&quot; tab on the bottom right to investigate the box model settings for particular elements.  (The screenshots shown below are for an in-progress version of the program and don't match the final appearance you are supposed to produce.
+			</p>
+
+			<div id="firebugscreenshots">
+				<img src="firebug.png" alt="Firebug" />&nbsp;<img src="firebug2.png" alt="Firebug 2" />
+			</div>
+			
+			<p>
+				Implement the content of your web page using XHTML as taught in class.  For full credit, your page must successfully pass the W3C XHTML validator.  Do not express stylistic information in the XHTML itself, such as inline styles or presentational HTML tags such as <code>b</code> or <code>font</code>.
+			</p>
+
+			<p>
+				Express all stylistic information on the page using CSS defined in the file <code>movie.css</code>.  The majority of the points for this assignment will be for the <code>movie.css</code> file.  For full credit, your style sheet must successfully pass the W3C CSS validator.  Part of your grade comes from expressing your CSS concisely and without unnecessary or redundant styles, as well as using context selectors to avoid applying classes and IDs to large numbers of elements when possible.  As much as possible you should limit the use of absolute and fixed positioning on this assignment.  You should not use HTML tables for any reason on this assignment.
+			</p>
+
+			<p>
+				Format your HTML and CSS to be as readable as possible, similarly to the examples from class.  Place a comment header in each file containing your name, section, a brief description of the assignment, and the file's contents.  You must properly use whitespace and indent your XHTML and CSS code following examples shown in class.  To keep line lengths manageable, do not place more than one block element on the same line or begin any block element past the 100th character on a line.  For reference, our Sample shown on this assignment has roughly 125 lines of CSS (80 without blank lines and comments), though you do not need to match this exactly.
+			</p>
+
+			<p>
+				Part of your grade will also come from successfully uploading your files to the web server codd.  <strong>
+				Please do not place a solution to this assignment on-line on a publicly accessible web site.</strong>
+			</p>
+		</div>
+
+
+		<div id="footer">
+			<p class="license">
+				<span class="w3c">
+					<a href="http://validator.w3.org/check/referer"><img src="./w3c-xhtml.png" " style="border: none;" /></a> 
+					<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="./w3c-css.png" style="border: none;" /></a>
+				</span>
+
+			</p>
+		</div>
+
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2729135-5");
+			pageTracker._initData();
+			pageTracker._trackPageview();
+		</script>
+	</body>
+</html>
+
