@@ -1,0 +1,224 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: ghostwhite;
+    text-align: center;
+    background-color: red;
+}
+
+h1{
+    font-size: 56px;
+    text-shadow: 2px 2px 4px #000;
+    font-style: oblique;
+}
+
+#battle-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    background-color: grey;
+    height: 700px;
+    background-image: url(background.jpeg);
+    background-size: cover;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#title {
+    color: #fff;
+}
+
+.players {
+    font-size: 35pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.player {
+    flex: 1;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.5s ease-in-out;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player1 {
+    order: 1;
+}
+
+#vs {
+    order: 2;
+}
+
+#player2 {
+    order: 3;
+}
+
+
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.character {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    width: 35%;
+    margin-bottom: 45px;
+}
+
+#player1 .character {
+    animation-delay: 1s;
+}
+
+#player2 .character {
+    animation-delay: 1.5s;
+}
+
+.dice-result {
+    display: none;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#roll-button:focus + .dice-result {
+    display: block;
+}
+
+#popup:target .dice-roll-button {
+    display: none;
+}
+
+.dice-roll-button:hover {
+    cursor: pointer;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 4px;
+    background: transparent; 
+    border: none;
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out 5s forwards;
+    animation-delay: 7s;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    border: 2px outset black;
+    transform: scale(1.05);
+}
+
+.vs {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out 3s forwards;
+    animation-delay: 4s;
+}
+
+.vs img {
+    max-width: 140px; 
+}
+
+
+.flip-vertical {
+    transform: scaleX(-1);
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out 4s forwards;
+    animation-delay: 5s;
+}
+
+.dice {
+    font-size: 100px;
+    font-weight: 800;
+    position: relative; 
+    margin: 0 10px; 
+    animation-delay: 7s;
+    transform: translateY(-25%);
+}
+
+.dice::after {
+    content: '';
+    display: inline-block;
+    animation: rolling 1s linear infinite, roll 2s linear forwards;
+    animation-delay: 7s;
+    transform-origin: center; 
+}
+
+@keyframes rolling {
+    0% {content: '\2680';}
+    20% {content: '\2681';}
+    40% {content: '\2682';}
+    60% {content: '\2683';}
+    80% {content: '\2684';}
+    100% {content: '\2685';}
+}
+
+@keyframes roll{
+    0% {
+      transform: translateY(0) rotateZ(0deg);
+    }
+    
+    40% {
+        transform: translateY(45%) rotateZ(360deg);
+      }
+
+    60% {
+      transform: translateY(45%) rotateZ(360deg);
+    }
+    
+    100% {
+      transform: translateY(45%) rotateZ(360deg);
+    }
+}

@@ -1,0 +1,487 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: ghostwhite;
+    background-color:red;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 56px;
+    color: ghostwhite;
+    text-shadow: 2px 2px 4px #000;
+    font-style: oblique;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+#roll-container {
+    text-align: center;
+    width: 95%;
+    padding: 20px;
+
+}
+
+.player-container {
+    display: flex;
+    justify-content: center;
+    height: 750px;
+    border: 2px solid gainsboro;
+    background-color:grey;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 20px;
+    background-image: url(bg.png);
+    background-size: 100% 100%;
+    animation: expandAndRemoveBorder 2s forwards;
+}
+
+.stats1 {
+    background: #111;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: white;
+    padding: 5px;
+    width: 40%;
+
+  }
+
+  .stats2 {
+    background: #111;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: white;
+    padding: 5px;
+    width: 40%;
+
+  }
+
+  .name {
+    position: relative;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+
+
+.vs {
+    font-size: 24px;
+    margin: 0 20px;
+    color: white;
+}
+
+.player {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    margin-left: 20%;
+    margin-top: -10%;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    animation-delay: 4s;
+}
+
+.player1 {
+    flex: 1;
+    padding: 20px;
+    margin-top:20%;
+    width: 35%;
+    margin-left:15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    animation-delay: 3s;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+.number {
+    opacity: 0; 
+    font-size: 36px; 
+    transition: opacity 1s ease-in-out, font-size 1s ease-in-out; 
+}
+
+
+.player .number {
+    animation: fadeIn 1s ease-in-out 0.5s forwards, scaleUp 1s ease-in-out 0.5s forwards; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    to {
+        font-size: 48px;
+    }
+}
+
+.flip-vertical {
+    transform: scaleX(-1);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 4px;
+  background: transparent; 
+  border: none;
+  opacity: 0; 
+  animation: fadeIn 2s ease-in-out 5s forwards;
+  animation-delay: 10s;
+}
+
+a{
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  border: 2px outset black;
+  transform: scale(1.05);
+}
+
+@keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+@keyframes flashR {
+    0% {
+      opacity: 1;
+    }
+    50%{
+        
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+      transform: scaleX(-1);
+    }
+    100% {
+      transform: translateX(0);
+      transform: scaleX(0);
+    }
+  }
+
+@keyframes shake2 {
+    0% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+      transform: scaleX(-1);
+    }
+  }
+
+@keyframes shake3 {
+    0% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.loser{
+    animation: flash 2s forwards , shake2 0.5s forwards;
+    animation-delay: 7s;
+  }
+
+.loser2{
+    animation: flash 2s forwards , shake 0.5s forwards;
+    animation-delay: 7s;
+  }
+
+.loser3{
+    animation: flashR 2s forwards , shake2 0.5s forwards;
+    animation-delay: 7s;
+  }
+
+.loser4{
+    animation: flashR 2s forwards , shake3 0.5s forwards;
+    animation-delay: 7s;
+  }
+
+.loser5{
+    animation: flashR 2s forwards , shake 0.5s forwards;
+    animation-delay: 7s;
+  }
+
+.stamp {
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    transform: translateY(-175%);
+    padding: 10px 20px;
+    opacity: 0;
+    animation: stamp-show .2s forwards;
+    animation-delay: 8s;
+}
+
+.stampp1 {
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    transform: translateY(-175%);
+    padding: 10px 20px;
+    opacity: 0;
+    animation: stamp-show .2s forwards;
+    animation-delay: 8s;
+}
+
+
+@keyframes stamp-show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out 4s forwards;
+    animation-delay: 6s;
+}
+
+.dice {
+    font-size: 100px;
+    font-weight: 800;
+    position: relative; 
+    margin: 0 10px; 
+    animation-delay: 6s;
+    transform: translateY(-25%);
+}
+
+.dice::after {
+    content: '';
+    display: inline-block;
+    animation: rolling5 1s linear forwards, roll 2s linear forwards;
+    animation-delay: 6s;
+    transform-origin: center; 
+}
+
+.dice2 {
+    font-size: 100px;
+    font-weight: 800;
+    position: relative; 
+    margin: 0 10px; 
+    animation-delay: 6s;
+    transform: translateY(-25%);
+}
+
+.dice2::after {
+    content: '';
+    display: inline-block;
+    animation: rolling3 1s linear forwards, roll 2s linear forwards;
+    animation-delay: 6s;
+    transform-origin: center; 
+}
+
+.dice3 {
+    font-size: 100px;
+    font-weight: 800;
+    position: relative; 
+    margin: 0 10px; 
+    animation-delay: 6s;
+    transform: translateY(-25%);
+}
+
+.dice3::after {
+    content: '';
+    display: inline-block;
+    animation: rolling4 1s linear forwards, roll 2s linear forwards;
+    animation-delay: 6s;
+    transform-origin: center; 
+}
+
+.dice4 {
+    font-size: 100px;
+    font-weight: 800;
+    position: relative; 
+    margin: 0 10px; 
+    animation-delay: 6s;
+    transform: translateY(-25%);
+}
+
+.dice4::after {
+    content: '';
+    display: inline-block;
+    animation: rolling2 1s linear forwards, roll 2s linear forwards;
+    animation-delay: 6s;
+    transform-origin: center; 
+}
+
+.dice5 {
+    font-size: 100px;
+    font-weight: 800;
+    position: relative; 
+    margin: 0 10px; 
+    animation-delay: 6s;
+    transform: translateY(-25%);
+}
+
+.dice5::after {
+    content: '';
+    display: inline-block;
+    animation: rolling6 1s linear forwards, roll 2s linear forwards;
+    animation-delay: 6s;
+    transform-origin: center; 
+}
+
+.dice6 {
+  font-size: 100px;
+  font-weight: 800;
+  position: relative; 
+  margin: 0 10px; 
+  animation-delay: 6s;
+  transform: translateY(-25%);
+}
+
+.dice6::after {
+  content: '';
+  display: inline-block;
+  animation: rolling1 1s linear forwards, roll 2s linear forwards;
+  animation-delay: 6s;
+  transform-origin: center; 
+}
+
+@keyframes rolling5 {
+    0% {content: '\2680';}
+    20% {content: '\2681';}
+    40% {content: '\2682';}
+    60% {content: '\2683';}
+    80% {content: '\2684';}
+    100% {content: '\2684';}
+}
+
+
+@keyframes rolling3 {
+    0% {content: '\2680';}
+    20% {content: '\2681';}
+    40% {content: '\2682';}
+    60% {content: '\2683';}
+    80% {content: '\2684';}
+    100% {content: '\2682';}
+}
+
+@keyframes rolling4 {
+    0% {content: '\2680';}
+    20% {content: '\2681';}
+    40% {content: '\2682';}
+    60% {content: '\2683';}
+    80% {content: '\2684';}
+    100% {content: '\2683';}
+}
+
+@keyframes rolling2 {
+    0% {content: '\2680';}
+    20% {content: '\2681';}
+    40% {content: '\2682';}
+    60% {content: '\2683';}
+    80% {content: '\2684';}
+    100% {content: '\2681';}
+}
+
+@keyframes rolling6 {
+    0% {content: '\2680';}
+    20% {content: '\2681';}
+    40% {content: '\2682';}
+    60% {content: '\2683';}
+    80% {content: '\2681';}
+    100% {content: '\2685';}
+}
+
+@keyframes rolling1 {
+  0% {content: '\2680';}
+  20% {content: '\2681';}
+  40% {content: '\2682';}
+  60% {content: '\2683';}
+  80% {content: '\2684';}
+  100% {content: '\2680';}
+}
+
+.flip-vertical {
+  transform: scaleX(-1);
+}
+
+.pw{
+  width: 20.5%;
+  margin-left: 5%;
+}
+.p{
+  width: 25%;
+}
+
+
+.m{
+  width:35%;
+  margin-left: 5%;
+}
+
+
+
+@keyframes expandAndRemoveBorder {
+    0% {
+      width: 80%;
+    }
+    100% {
+        width: 103%;
+        height: 725px;
+        border: none;
+    }
+}

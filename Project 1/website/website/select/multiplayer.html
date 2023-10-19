@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Legends - Multiplayer</title>
+    <link rel="stylesheet" href="multiplayer.css">
+</head>
+<body>
+
+        <h1 class="chooseText">Lucky Legends</h1>
+        <div id="selector"> 
+        <p class="chooseText">Choose Your Character!</p>
+        <div class="player-container">
+            <div class="player" id="player1">
+                <h1 id="p1">Player 1</h1>
+                <div class="character-list">
+
+                    <label for="character1-player1" class="character-label">
+                        Mega-Man <br>
+                        <input type="radio" name="character-player1" id="character1-player1">
+                        <img src="megaman.gif" class="character" alt="Character 1"> <br> 
+                        <p class="player1description"> A Robot Fighting For Justice</p>
+                    </label>
+                    
+                    <label for="character2-player1" class="character-label">
+                        Michael Jackson <br>
+                        <input type="radio" name="character-player1" id="character2-player1"> <br>
+                        <img src="jackson.webp" alt="Character 2">
+                        <p class="player1description">The King of Pop</p>
+                    </label>
+
+                    
+                    <label for="character3-player1" class="character-label">
+                        Batman <br> 
+                        <input type="radio" name="character-player1" id="character3-player1"> <br> <br>
+                        <img src="batman.gif" alt="Character 3"> <br> 
+                        <p class="player1description">The Dark Knight</p>
+                    </label>
+
+                    
+                    <label for="character4-player1" class="character-label">
+                        Patrick Star <br> 
+                        <input type="radio" name="character-player1" id="character4-player1"> <br><br><br><br>
+                        <img src="patrick.gif" alt="Character 4"> <br> <br> 
+                        <p class="player1description">Bikini Bottom's Greatest</p>
+                    </label>
+
+                    <label for="character5-player1" class="character-label">
+                        Phoenix Wright <br>
+                        <input type="radio" name="character-player1" id="character5-player1"> 
+                        <br> <br> <br>
+                        <img src="wright.webp" alt="Character 5">
+                        <p class="player1description">The Ace Attorney</p>
+                    </label>
+
+                </div>
+                <br>
+                <input type="checkbox" class="ready-checkbox" id="player1-ready-checkbox"> 
+                <label for="player1-ready-checkbox" class="ready-label">Ready</label> <br>
+
+            </div>
+            <div class="player" id="player2">
+                <h1 id="p2">Player 2</h1>
+                <div class="character-list">
+
+                    <label for="character5-player2" class="character-label" >
+                        Phoenix Wright <br>
+                        <input type="radio" name="character-player2" id="character5-player2">
+                        <br> <br> <br>
+                        <img src="wright.webp" class="mirror" alt="Character 5"> <br> 
+                        <p class="player2description">The Ace Attorney</p>
+                    </label>
+
+                    <label for="character4-player2" class="character-label">
+                        Patrick Star <br>
+                        <input type="radio" name="character-player2" id="character4-player2">
+                        <br> <br> <br> <br>
+                        <img src="patrick.gif" class="mirror" alt="Character 4"> <br> <br>
+                        <p class="player2description">Bikini Bottom's Greatest</p>
+                    </label>
+
+                    <label for="character3-player2" class="character-label">
+                        Batman <br>
+                        <input type="radio" name="character-player2" id="character3-player2">
+                        <br> <br>
+                        <img src="batman.gif" class="mirror" alt="Character 3"> <br>
+                        <p class="player2description">The Dark Knight</p>
+                    </label>
+
+                    <label for="character2-player2" class="character-label">
+                        Micheal jackson <br>
+                        <input type="radio" name="character-player2" id="character2-player2">
+                        <br>
+                        <img src="jackson.webp" class="mirror" alt="Character 2">
+                        <p class="player2description">The King Of Pop</p>
+                    </label>
+
+                    <label for="character1-player2" class="character-label">
+                        Mega-man <br>
+                        <input type="radio" name="character-player2" id="character1-player2"> <br> 
+                        
+                        <img src="megaman.gif" class="mirror" alt="Character 1"> <br><br>
+                        <p class="player2description"> A Robot Fighting For Justice</p>
+                    </label>
+
+                </div>
+                <br>
+                <input type="checkbox" class="ready-checkbox" id="player2-ready-checkbox"> 
+                <label for="player2-ready-checkbox" class="ready-label">Ready</label> 
+            </div>
+        </div>
+     
+        <a href="../roll/roll1.html">
+        <button class="button" id="play-button">Play</button>
+        </a> <br>
+
+        <a href="../welcome/welcome.html">
+            <button class="button" id="play-button">Exit</button>
+        </a>
+    </div>
+</body>
+</html>

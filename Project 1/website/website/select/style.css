@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:slategray;
+    
+}
+
+#selector {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    background-color:grey;
+    height: 700px;
+    background-image: url(vs.jpg);
+    background-size:cover;
+
+}
+
+.player-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+#title{
+    color: #fff;
+}
+
+#chooseText{
+    font-size: 25pt;
+    font-weight: bold;
+    font-style: oblique;
+    color:ghostwhite;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.players{
+    font-size: 35pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.player1description{
+
+min-width: fit-content;
+background-color: gold;
+border: 1px solid black;
+}
+
+.player2description{
+
+    min-width: fit-content;
+    background-color: red;
+    border: 1px solid black;
+}
+
+
+.player {
+    flex: 1;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.5s ease-in-out;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.player:hover {
+    border: 2px solid cyan
+}
+
+.player-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mirror{
+    transform: scaleX(-1);
+
+}
+
+.character img {
+    width: 100px;
+    height: auto;
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.character-label {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: height 2s;
+    
+}
+
+
+.character-label img {
+    width: 125px;
+    height: auto;
+}
+
+.character-label p {
+    display: none;
+}
+
+.character-label:hover p {
+    display: block;
+}
+
+.ready-checkbox {
+    display: none; 
+}
+
+.ready-label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none; 
+    transition: background-color 0.2s ease;
+}
+
+
+.ready-checkbox:checked + .ready-label {
+    background-color: #4CAF50;
+}
+
+.ready-checkbox:checked + .ready-label::before {
+    content: "✓ ";
+}
