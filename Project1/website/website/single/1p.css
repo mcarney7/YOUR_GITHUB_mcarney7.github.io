@@ -1,0 +1,147 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    text-align: center;
+    color: ghostwhite;
+    background-image: url(a.jpg);
+    background-size: cover;
+    width: auto 0;
+}
+
+h1 {
+    font-size: 56px;
+    color: ghostwhite;
+    text-shadow: 2px 2px 4px #000;
+    transform: translateY(-50%);
+}
+
+#selector {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    height: 700px;
+    background-image: url(b.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.player1description {
+    background-color: blue;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top:20px;
+    border-right: .15em solid orange;
+    animation: typing 1s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.mega{
+    margin-top:15px;
+}
+
+.character-label:hover .player1description {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+.player {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-list {
+    display: flex; 
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.player-label {
+    font-weight: bold;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 4px;
+    background: transparent; 
+    border: none;
+
+}
+
+.button:hover {
+    background-color: skyblue;
+    border: 2px outset black;
+    transform: scale(1.05);
+}
+
+
+.character-label {
+    display: block;
+    margin-top: 5px;
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: height 2s;
+    margin-right: 5px;
+    border: dashed black .1px;
+}
+
+.character-label img {
+    width: auto;
+    height: 150px;
+}
+
+.character-label p {
+    display: none;
+}
+
+.character-label:hover p {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,199 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: ghostwhite;
+    padding: 20px;
+    background-image: url("wbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto 0;
+    margin-top: 10%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards, slideIn 2s ease-in-out forwards;
+}
+
+h1 {
+    font-size: 56px;
+    color: #FFD700;
+    font-style: oblique;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+    transform: translateY(-40%);
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+/* Style for Single Player button */
+.button-single-player {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.3s;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+    position: relative;
+}
+
+.button-single-player:hover {
+    background-color: grey;
+    border: 2px outset black;
+    transform: scale(1.05);
+}
+
+.button-single-player:before {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.button-single-player:hover:before {
+    content: '';
+    animation: rolling1 1s linear forwards, roll 2s linear forwards;
+}
+
+.button-multiplayer {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.3s;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+    position: relative;
+}
+
+.button-multiplayer:hover {
+    background-color: grey;
+    border: 2px outset black;
+    transform: scale(1.05);
+}
+
+.button-multiplayer:before {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    top: 30%;
+    left: 30%; 
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.button-multiplayer:hover:before {
+    content: '';
+    animation: rolling2 1s linear forwards, roll 2s linear forwards;
+    transform-origin: center;
+}
+
+@keyframes rolling {
+    0% {content: '\2680';}
+    20% {content: '\2681';}
+    40% {content: '\2682';}
+    60% {content: '\2683';}
+    80% {content: '\2684';}
+    100% {content: '\2685';}
+}
+
+@keyframes rolling1 {
+    0% {content: '\2680';}
+    20% {content: '\2681';}
+    40% {content: '\2682';}
+    60% {content: '\2683';}
+    80% {content: '\2684';}
+    90% {content: '\2685';}
+    100% {content: '\2680';}
+}
+
+@keyframes rolling2 {
+    0% {content: '\2680';}
+    20% {content: '\2681';}
+    40% {content: '\2682';}
+    60% {content: '\2683';}
+    80% {content: '\2684';}
+    90% {content: '\2685';}
+    100% {content: '\2681';}
+}
+
+@keyframes roll {
+    0% {
+        transform: translateY(0) rotateZ(0deg);
+    }
+
+    40% {
+        transform: translateY(45%) rotateZ(360deg);
+    }
+
+    60% {
+        transform: translateY(45%) rotateZ(360deg);
+    }
+
+    100% {
+        transform: translateY(45%) rotateZ(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-40%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.rain {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    animation: falling 2s linear forwards;
+}
+
+.rain::before {
+    content: '\2680';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: black;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(-500px) rotate(0deg);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(200px) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform:rotate(360deg);
+        opacity: 0;
+    }
+}
