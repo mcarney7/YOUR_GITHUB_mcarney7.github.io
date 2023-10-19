@@ -1,0 +1,132 @@
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: red;
+}
+
+#battle-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    background-color: grey;
+    height: 700px;
+    background-image: url(https://codd.cs.gsu.edu/~mcarney7/Projects/Project1/background.jpeg);
+    background-size: cover;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: row; /* Place players side by side */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#title {
+    color: #fff;
+}
+
+.players {
+    font-size: 35pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.player {
+    flex: 1; /* Equal width for both players */
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.5s ease-in-out;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Player 1 is on the left, Player 2 is on the right */
+#player1 {
+    order: 1; /* Order Player 1 to appear first on the left */
+}
+
+#player2 {
+    order: 2; /* Order Player 2 to appear second on the right */
+}
+
+.ready-checkbox {
+    display: none;
+}
+
+.ready-label {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+.ready-checkbox:checked + .ready-label {
+    background-color: #4CAF50;
+}
+
+.ready-checkbox:checked + .ready-label::before {
+    content: "✓ ";
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.character {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* Apply animation delay for player 1 and player 2 */
+#player1 .character {
+    animation-delay: 1s; /* Adjust as needed */
+}
+
+#player2 .character {
+    animation-delay: 1.5s; /* Adjust as needed */
+}
+
+.dice-result {
+    display: none;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#roll-button:focus + .dice-result {
+    display: block;
+}
+
+#popup:target .dice-roll-button {
+    display: none;
+}
+
+.dice-roll-button:hover {
+    cursor: pointer;
+}
