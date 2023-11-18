@@ -1,0 +1,74 @@
+body {
+    font-family: Tacoma;
+    background-color: burlywood;
+    text-align: center;
+    color: brown;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.summary{
+    background-color:goldenrod;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-top:5px;
+    padding-bottom:10px;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.project-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.project-info ul {
+    list-style: none;
+}
+
+.project-info li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member-box {
+    background-color: goldenrod;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.team-member-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.member-info {
+    text-align: left;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
