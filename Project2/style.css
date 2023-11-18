@@ -1,0 +1,295 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.questions_img {
+    background-image: url('logo3.jpg');
+}
+
+.login_img {
+    background-image: url('background1.jpg');
+}
+
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    height: 45%;
+}
+
+.scorePage {
+    background-color: rgb(35, 90, 161);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: red;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+
+    
+}
+
+table, th, td {
+    
+    color: white;
+
+}
+
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: 2px red;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+input[type="submit"]:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-color: rgb(55, 0, 128);
+    color: #333;
+    font-size: 16px; 
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-color: rgb(55, 0, 128);
+    color: #333;
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+	max-height: 45%;
+}
+
+.labels {
+    display: block;
+    text-align: left;
+    border-color: rgb(55, 0, 128);
+}
+
+.center {
+    margin: auto;
+    border-color: rgb(55, 0, 128);
+}
+
+.registerButton {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color:rgb(55, 0, 128);
+    color: white;
+    border-radius: 2px;
+    transition: background-color 0.2s;
+    width: max-content;
+    margin-top: 5px;
+}
+
+.registerButton:hover {
+    background-color: #45a049;
+}
+
+.loginButton {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(55, 0, 128);
+    border-radius: 2px;
+    transition: background-color 0.2s;
+    width: max-content;
+    border-color:rgb(55, 0, 128);
+}
+
+.loginButton:hover {
+    background-color: #45a049;
+}
+
+.startButton {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color:rgb(55, 0, 128);
+    color: white;
+    border-radius: 2px;
+    transition: background-color 0.2s;
+    width: max-content;
+    margin: 10px;
+
+}
+.startButton:hover {
+    background-color: #45a049;
+    transform: scale(1.25);
+}
+
+@keyframes rainbow {
+    0% { color: red; } 
+    16% { color: orange; } 
+    33% { color: yellow; } 
+    50% { color: green; } 
+    66% { color: blue; } 
+    83% { color: violet; }
+    100% { color: red; } 
+  }
+  
+
+  #rainbowText {
+    color: red;
+    animation: rainbow 4s linear infinite; 
+  }
+
+  .specialText {
+    background-color: #0c0c0c; 
+    color: #ffd700; 
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+#alternate tr:nth-child(even) {
+    background: RGB( 139, 117, 0);
+    border: 2px solid black;
+}
+
+#alternate tr:nth-child(odd) {
+    background: RGB( 0, 31, 63);
+    border: 2px solid black
+}
+
+  
+  .button {
+    background-color: #e74c3c;
+    color: #fff;
+	margin-top: 90px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+.question {
+    background-color:black ;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px; 
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 2px solid #1565c0; 
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    border-color: transparent;
+}
+
+.option {
+    background-color: navy;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border: 2px solid #1565c0; 
+}
+
+.option:hover {
+    background-color: gold;
+    color: #000;
+    transform: scale(1.1);
+}
+/* Add these styles to your existing CSS file */
+
+.fireworks-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.firework {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f00; 
+    border-radius: 50%;
+    opacity: 0;
+    animation: fireworks 1s ease-out forwards;
+}
+
+@keyframes fireworks {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-100px) scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-200px) scale(2);
+    }
+}
+.fade-in-text {
+    color: #fff;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
+    position: absolute;
+    font-size: 24px;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
