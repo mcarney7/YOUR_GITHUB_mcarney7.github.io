@@ -1,4 +1,0 @@
-tuffles,10
-sueso,10
-darto,2
-suger,10
